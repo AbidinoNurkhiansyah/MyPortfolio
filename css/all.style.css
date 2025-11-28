@@ -119,7 +119,7 @@ p {
   height: 66px;
   width: 100%;
   padding: 21px 0;
-  background: transparent;
+  background: var(--secondaycolor);
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -484,26 +484,25 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .logo.y img:nth-child(1) {
   width: 120%;
 }
-/* 
+
 #workexperience .logo-wraper:hover .logo-left {
-    transform: perspective(600px) rotateY(-20deg);
-    transition: all ease .2s;
-} */
+  transform: perspective(600px) rotateY(-20deg);
+  transition: all ease 0.2s;
+}
+*/ #workexperience .logo-wraper:hover .logo-left.r {
+  transform: perspective(600px) rotateY(20deg);
+  transition: all ease 0.2s;
+}
 
-/* #workexperience .logo-wraper:hover .logo-left.r {
-    transform: perspective(600px) rotateY(20deg);
-    transition: all ease .2s;
-} */
-/* 
-#workexperience .logo-wraper:hover .bd{
-    transform: perspective(600px) rotateY(-20deg);
-    transition: all ease .2s;
-} */
+#workexperience .logo-wraper:hover .bd {
+  transform: perspective(600px) rotateY(-20deg);
+  transition: all ease 0.2s;
+}
 
-/* #workexperience .logo-wraper:hover .bd.r{
-    transform: perspective(600px) rotateY(20deg);
-    transition: all ease .2s;
-} */
+#workexperience .logo-wraper:hover .bd.r {
+  transform: perspective(600px) rotateY(20deg);
+  transition: all ease 0.2s;
+}
 
 @keyframes updown {
   0% {
@@ -517,10 +516,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   }
 }
 
-/* .logo-left:hover .logo{
-    transition: all ease .2s;
-    left: 50%;
-} */
+.logo-left:hover .logo {
+  transition: all ease 0.2s;
+  left: 50%;
+}
 
 .experience-title {
   color: var(---textcolor);

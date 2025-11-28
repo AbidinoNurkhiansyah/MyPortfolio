@@ -1,10 +1,10 @@
-const navbar = document.getElementsByClassName("mynav")[0];
+const navbar = document.querySelector("nav.mynav");
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset <= 0) {
     navbar.style.background = "transparent";
   } else if (window.pageYOffset > 0) {
-    navbar.style.background = "var(--primarycolor)";
+    navbar.style.background = "#2d2d39";
   }
 });
 

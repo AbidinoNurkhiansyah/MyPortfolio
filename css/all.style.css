@@ -27,6 +27,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 12px 18px;
+  max-width: 130px;
   background: linear-gradient(90.54deg, #ffa800 0.48%, #ffb300 105.43%);
   border-radius: 10px;
   border: none;
@@ -66,7 +67,7 @@ h1 {
 
 h2 {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2.25rem; /* 36px */
   line-height: 1.1em;
   color: var(--bodytext);
@@ -74,9 +75,9 @@ h2 {
 
 h3 {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem; /* 32px */
-  line-height: 1.5em;
+  line-height: 1.3em;
   color: var(--bodytext);
 }
 
@@ -91,7 +92,7 @@ h4 {
 h5 {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.3rem; /* 24px */
   line-height: 1.1em;
   color: var(--accsentcolor);
 }
@@ -118,7 +119,7 @@ p {
   height: 66px;
   width: 100%;
   padding: 21px 0;
-  background: transparent;
+  background: var(--secondaycolor);
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -131,7 +132,7 @@ p {
 }
 
 .nav-link.active {
-  color: var(--bodytext);
+  color: var(--accsentcolor);
   font-style: normal;
   font-weight: 500;
   box-sizing: border-box;
@@ -157,7 +158,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-  color: var(--bodytext);
+  color: var(--accsentcolor);
 }
 
 .nav-link.social {
@@ -369,7 +370,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 #hero .year {
-  width: 270px;
+  width: 350px;
   height: 40px;
   background: var(--primarycolor);
   border-radius: 5px;
@@ -483,26 +484,25 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .logo.y img:nth-child(1) {
   width: 120%;
 }
-/* 
+
 #workexperience .logo-wraper:hover .logo-left {
-    transform: perspective(600px) rotateY(-20deg);
-    transition: all ease .2s;
-} */
+  transform: perspective(600px) rotateY(-20deg);
+  transition: all ease 0.2s;
+}
+*/ #workexperience .logo-wraper:hover .logo-left.r {
+  transform: perspective(600px) rotateY(20deg);
+  transition: all ease 0.2s;
+}
 
-/* #workexperience .logo-wraper:hover .logo-left.r {
-    transform: perspective(600px) rotateY(20deg);
-    transition: all ease .2s;
-} */
-/* 
-#workexperience .logo-wraper:hover .bd{
-    transform: perspective(600px) rotateY(-20deg);
-    transition: all ease .2s;
-} */
+#workexperience .logo-wraper:hover .bd {
+  transform: perspective(600px) rotateY(-20deg);
+  transition: all ease 0.2s;
+}
 
-/* #workexperience .logo-wraper:hover .bd.r{
-    transform: perspective(600px) rotateY(20deg);
-    transition: all ease .2s;
-} */
+#workexperience .logo-wraper:hover .bd.r {
+  transform: perspective(600px) rotateY(20deg);
+  transition: all ease 0.2s;
+}
 
 @keyframes updown {
   0% {
@@ -516,10 +516,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   }
 }
 
-/* .logo-left:hover .logo{
-    transition: all ease .2s;
-    left: 50%;
-} */
+.logo-left:hover .logo {
+  transition: all ease 0.2s;
+  left: 50%;
+}
 
 .experience-title {
   color: var(---textcolor);

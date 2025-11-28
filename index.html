@@ -7,7 +7,7 @@
 
     <link
       rel="shortcut icon"
-      href="assets/icon/shortcut.svg"
+      href="assets/icon/mylogo.svg"
       type="image/x-icon"
     />
 
@@ -56,7 +56,12 @@
     <title>Portfolio | Abidino Nurkhiansyah</title>
   </head>
 
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example"
+    data-bs-offset="50"
+    tabindex="0"
+  >
     <!-- Section Navbar -->
     <div id="navbar"></div>
     <!-- End of Navbar -->
@@ -90,7 +95,7 @@
     <!-- End Section Education -->
 
     <!-- Section Sertificate -->
-    <div id="sertificate"></div>
+    <div id="certificate"></div>
     <!-- End OF Section Sertificate -->
 
     <!-- Section Footer -->
@@ -114,7 +119,7 @@
       loadSection("skills-section", "views/skills-section.html");
       loadSection("service-section", "views/service-section.html");
       loadSection("education-section", "views/education-section.html");
-      loadSection("sertificate", "views/certifications-section.html");
+      loadSection("certificate", "views/certifications-section.html");
       loadSection("footer-section", "views/footer-section.html");
     </script>
 

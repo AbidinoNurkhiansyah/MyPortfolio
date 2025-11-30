@@ -106,7 +106,7 @@
 
   /* Hero */
   #hero {
-    height: 65rem;
+    height: 60rem;
   }
 
   #hero .container {
@@ -126,7 +126,7 @@
   }
 
   .hero-title {
-    margin-top: -9rem;
+    margin-top: -5rem;
     display: flex;
     align-items: flex-start;
   }
@@ -134,7 +134,7 @@
   .hero-title .service {
     margin-top: 0; /* hilangkan margin negatif */
     padding-left: 10px !important;
-    margin-top: -33rem;
+    margin-top: -23rem;
     width: 100%;
   }
 

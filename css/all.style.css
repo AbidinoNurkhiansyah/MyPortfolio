@@ -366,7 +366,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 .circle-hero img {
   width: 85%;
-  top: 20px;
+  top: 30px;
 }
 
 #hero .year {
